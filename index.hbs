@@ -1,0 +1,31 @@
+{{!-- this page is dunamic --}}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>home with hbs dynamic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>{{>header}}</h2>
+
+    <h2>{{title}}</h2>
+    <h1>{{desc}}</h1>
+
+    <form id="form1">
+        <input type="text" id="adress">
+        <button> search</button>
+    </form>
+
+    <p id="location"></p>
+    <p id="forecast"></p>
+    <p id="error"></p>
+   
+
+    {{> footer }}
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
